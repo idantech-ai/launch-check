@@ -26,36 +26,36 @@
 
 ```
 /plugin marketplace add idantech-ai/launch-check
-/plugin install launch-check@idantech
+/plugin install idantech@idantech-ai
 ```
 
 **באפליקציית Claude (לשונית Code):** לוחצים על **+** ליד שורת הכתיבה ← **Plugins** ←
 **Add** ← מוסיפים marketplace ומדביקים `idantech-ai/launch-check` ← בלשונית **Discover**
-לוחצים **Add to this computer** על Launch check.
+לוחצים **Add to this computer** על idantech.
 
 **בלי לפתוח סשן:**
 
 ```
 claude plugin marketplace add idantech-ai/launch-check
-claude plugin install launch-check@idantech
+claude plugin install idantech@idantech-ai
 ```
 
 התקנה באחת הדרכים עובדת גם בטרמינל וגם באפליקציה באותו מחשב.
 
-**ידנית:** מעתיקים את התיקייה `plugins/launch-check/skills/launch-check`
+**ידנית:** מעתיקים את התיקייה `plugins/idantech/skills/launch-check`
 אל `~/.claude/skills/` (לכל הפרויקטים) או אל `.claude/skills/` בתוך פרויקט אחד.
 
-**עדכון לגרסה חדשה:** `claude plugin marketplace update idantech`
+**עדכון לגרסה חדשה:** `claude plugin marketplace update idantech-ai`
 
 ## שימוש
 
 פותחים את Claude Code בתיקיית הפרויקט וכותבים:
 
 ```
-/launch-check
+/idantech:launch-check
 ```
 
-או רק תחום אחד: `/launch-check security` · `accessibility` · `privacy` · `design` · `quality`
+או רק תחום אחד: `/idantech:launch-check security` · `accessibility` · `privacy` · `design` · `quality`
 
 אפשר גם פשוט לכתוב "תבדוק את האתר לפני שאני מעלה אותו".
 

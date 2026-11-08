@@ -25,7 +25,7 @@ in the middle stands out.
 
 ## Scope from the command
 
-The user may pass an area: `/launch-check security` (or אבטחה), `accessibility`
+The user may pass an area: `/idantech:launch-check security` (or אבטחה), `accessibility`
 (נגישות), `privacy` (פרטיות), `design` (עיצוב), `quality` (טפסים, מהירות, SEO,
 קישורים). Run only that area. With no area, run all of them.
 

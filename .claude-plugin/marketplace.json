@@ -1,5 +1,5 @@
 {
-  "name": "idantech",
+  "name": "idantech-ai",
   "owner": {
     "name": "Idan Ayash (IdanTech)",
     "url": "https://idantech.co.il"
@@ -9,10 +9,10 @@
   },
   "plugins": [
     {
-      "name": "launch-check",
-      "source": "./plugins/launch-check",
+      "name": "idantech",
+      "source": "./plugins/idantech",
       "description": "בדיקות לפני עלייה לאוויר לאתרים ומערכות שנבנו עם AI — דוח בעברית, תיקונים רק באישור.",
-      "version": "1.0.2"
+      "version": "1.1.0"
     }
   ]
 }
