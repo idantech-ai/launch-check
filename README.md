@@ -25,7 +25,7 @@
 **אפשרות 1 — כפלאגין (מומלץ):** בתוך Claude Code:
 
 ```
-/plugin marketplace add idanayash/launch-check
+/plugin marketplace add idantech-ai/launch-check
 /plugin install launch-check@idantech
 ```
 
