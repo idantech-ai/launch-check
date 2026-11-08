@@ -60,6 +60,7 @@ class PageParser(HTMLParser):
         self.forms = []
         self.links_text = []
         self.first_link = True
+        self.page_name = ""
 
     def handle_starttag(self, tag, attrs):
         a = {k: (v or "") for k, v in attrs}
@@ -159,7 +160,8 @@ class PageParser(HTMLParser):
         if not self.has_skip and self.inputs is not None:
             self.issues.append(("a11y", 1, "no skip-to-content link as the first link"))
         texts = " ".join(self.links_text)
-        if not re.search(r"נגישות|accessibility", texts, re.I):
+        is_statement_page = re.search(r"נגישות|accessibility", self.meta.get("__title__", "") + " " + self.page_name, re.I)
+        if not is_statement_page and not re.search(r"נגישות|accessibility", texts, re.I):
             self.issues.append(("a11y", 1, "no link to an accessibility statement (הצהרת נגישות)"))
         if self.forms and not re.search(r"פרטיות|privacy", texts, re.I):
             self.issues.append(("privacy", 1, "page has a form but no link to a privacy policy"))
@@ -187,6 +189,7 @@ def main(argv):
     html_files = list(files_by_ext(root, HTML_EXT))
     for path in html_files:
         p = PageParser()
+        p.page_name = os.path.basename(path)
         text = read(path)
         try:
             p.feed(text)

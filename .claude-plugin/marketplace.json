@@ -12,7 +12,7 @@
       "name": "launch-check",
       "source": "./plugins/launch-check",
       "description": "בדיקות לפני עלייה לאוויר לאתרים ומערכות שנבנו עם AI — דוח בעברית, תיקונים רק באישור.",
-      "version": "1.0.1"
+      "version": "1.0.2"
     }
   ]
 }
