@@ -16,6 +16,13 @@ owns the decisions — some fixes change brand colors, some need a key rotated
 at a provider, some need facts only the business owner knows. So the audit
 phase never edits project files.
 
+## Language
+
+Talk to the user in Hebrew from the first message: progress updates, questions,
+the report and the fix summaries. Only code, file paths and commands stay in
+English. Users often screen-record this flow, so a single English status line
+in the middle stands out.
+
 ## Scope from the command
 
 The user may pass an area: `/launch-check security` (or אבטחה), `accessibility`

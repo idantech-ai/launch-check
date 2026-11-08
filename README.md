@@ -22,15 +22,30 @@
 
 ## התקנה
 
-**אפשרות 1 — כפלאגין (מומלץ):** בתוך Claude Code:
+**בטרמינל (Claude Code):**
 
 ```
 /plugin marketplace add idantech-ai/launch-check
 /plugin install launch-check@idantech
 ```
 
-**אפשרות 2 — ידנית:** מעתיקים את התיקייה `plugins/launch-check/skills/launch-check`
+**באפליקציית Claude (לשונית Code):** לוחצים על **+** ליד שורת הכתיבה ← **Plugins** ←
+**Add** ← מוסיפים marketplace ומדביקים `idantech-ai/launch-check` ← בלשונית **Discover**
+לוחצים **Add to this computer** על Launch check.
+
+**בלי לפתוח סשן:**
+
+```
+claude plugin marketplace add idantech-ai/launch-check
+claude plugin install launch-check@idantech
+```
+
+התקנה באחת הדרכים עובדת גם בטרמינל וגם באפליקציה באותו מחשב.
+
+**ידנית:** מעתיקים את התיקייה `plugins/launch-check/skills/launch-check`
 אל `~/.claude/skills/` (לכל הפרויקטים) או אל `.claude/skills/` בתוך פרויקט אחד.
+
+**עדכון לגרסה חדשה:** `claude plugin marketplace update idantech`
 
 ## שימוש
 
